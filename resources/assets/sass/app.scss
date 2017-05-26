@@ -1,0 +1,11 @@
+// Variables
+@import "variables";
+
+// Bootstrap
+@import '~bootstrap/dist/css/bootstrap';
+
+.location{
+  background-color:#fff;
+  color:#000;
+  transition: all .2s;
+}
