@@ -15,8 +15,8 @@ class DatabaseSeeder extends Seeder
         $otley = new Location([
           'label' => 'Otley',
           'timezone' => 'Europe/London',
-          'lat' => 53.90553,
-          'long' => -1.69383
+          'lat' => '53.90553',
+          'long' => '-1.69383'
         ]);
         $otley->save();
 

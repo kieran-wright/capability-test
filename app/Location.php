@@ -9,8 +9,7 @@ class Location extends Model
 {
     use SoftDeletes;
 
-    public function __construct(array $attributes = array()){
-      $junk = $invalid ?? "default";
-      return parent::__construct($attributes);
-    }
+    protected $fillable = [
+        'label', 'timezone', 'lat', 'long',
+    ];
 }

@@ -20,6 +20,7 @@ class CreateLocationTable extends Migration
         $table->float('lat', 9, 7);
         $table->float('long', 9, 7);
         $table->timestamps();
+        $table->softDeletes();
       });
     }
 
