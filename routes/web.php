@@ -1,6 +1,5 @@
 <?php
 
-use App\Location;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -12,8 +11,4 @@ use App\Location;
 |
 */
 
-Route::get('/', function () {
-    $locations = Location::get();
-    
-    return view('welcome', ['locations' => $locations]);
-});
+Route::get('/', 'LocationsController@index');
